@@ -1,3 +1,5 @@
+require 'mongo'
+
 client = Mongo::Client.new(ENV["MONGO_URL"])
 
 Handler = Proc.new do |req, res|
