@@ -1,6 +1,6 @@
 require 'mongo'
 
-client = Mongo::Client.new(ENV["MONGO_URL"])
+client = Mongo::Client.new("#{ENV["MONGO_URL"]}/menu")
 
 Handler = Proc.new do |req, res|
   document = { name: "Harriet", age: 36 }
